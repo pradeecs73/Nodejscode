@@ -2,6 +2,9 @@ const http=require("http");
 const cluster=require("cluster");
 const os=require("os");
 
+console.log("os process",os.cpus().length);
+console.log("port",process.env.port);
+
 if(cluster.isMaster){
     console.log(`process is ${process.pid} is running`);
     cluster.fork();
