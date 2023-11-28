@@ -15,6 +15,6 @@ const add = (a, b) => {
   };
   
   export default {
-    add,
-    subtract,
+    addition:add,
+    subtraction:subtract,
   };
